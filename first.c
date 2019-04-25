@@ -32,3 +32,36 @@ void printBill(struct K s[],int x)
 	 	printf("\n\t\t\t Thank you:)");
 	 }
 }
+void program()
+{
+	int n;
+	int j,i;
+	printf("\n\t\t\t Enter the Number of Process: ");
+	scanf("%d",&n);
+	struct K u[n],temp;
+	printf("\n\n\t\t\t Enter name of students:\n");	
+	for(i=0;i<n;i++)
+	{	
+		printf("\n\t\t\t Enter number %d  name :",i+1);
+		scanf("%s",u[i].name);
+		printf("\n\t\t\t Enter number %d quantity number:",i+1);
+		scanf("%d",&u[i].number);
+	}
+	printf("\n Entered name and quantity:\n");
+	printf("\n\t\t\t\tName \t\tQuantity\n");
+	for(i=0;i<n;i++)
+	{
+		printf("\n\n\t\t\t\t%s \t\t %d",u[i].name,u[i].number);
+	}
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n-1;j++)
+		{
+			if(u[j].number<u[j+1].number)
+			{			
+			temp=u[j];
+			u[j]=u[j+1];
+			u[j+1]=temp;	
+			}
+		}
+	}

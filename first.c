@@ -74,3 +74,12 @@ printf("\n Sorted data by the quantity: \n\n");
 	printf("\n");
 	printBill(u,n); 
 }
+int main()
+{
+	int a;
+	printf("\n\n\t\t WELCOME!!!!!!!!!!!!!!!!!!!!!!WELCOME!!!!!!!!!!!!!!!!!!!!!!WELCOME!!!!!!!!!!!!!!!!!!!!!!WELCOME ");
+	printf("\n\n # YOUR OPTIONS: ");
+	printf("\n\n 1. Enter the program");
+	printf("\n\n 2. Exit");
+	printf("\n\n \t\t\t Enter your choice (1,2): ");
+	scanf("%d",&a);

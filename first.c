@@ -65,7 +65,7 @@ void program()
 			}
 		}
 	}
-printf("\n Sorted data by the quantity: \n\n");
+	printf("\n Sorted data by the quantity: \n\n");
 	printf("\t\t\t\tName \t\t Quantity\n");
 	for(i=0;i<n;i++)
 	{
@@ -83,3 +83,12 @@ int main()
 	printf("\n\n 2. Exit");
 	printf("\n\n \t\t\t Enter your choice (1,2): ");
 	scanf("%d",&a);
+	switch(a)
+	{
+		case 1: program();
+				break;
+		case 2:exit(0);
+				break;
+		default:printf("\n You have entered wrong choice\n\n Press any key to continue ::\n\n ");		
+	}
+}

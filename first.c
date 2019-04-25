@@ -2,33 +2,33 @@
 #include<stdlib.h>
 #include<string.h>
 #include<unistd.h>
-struct A
-{	
-	int quantity;
-	char name[20];
-	
+struct K
+{
+	int number;
+	char name[10];	
 };
-void printBill(struct A s[],int a)
+void printBill(struct K s[],int x)
 {	
+	int i,p;
 	float price;
-	int i,x;
-	printf("\n\n\t\tprint Bill or not :");
-	printf("\n\n\t\tEnter 'N' for NO and'Y' for yes::");
-	scanf("%s",&x);
-    if(x=='Y'){
-    
-     	printf("\n\n\t\t The price of 1 gift is :");
+	printf("\n\n\t\t\t Do you want to print Bill:");
+	printf("\n\n\t\t\t Enter 'Y' for yes and 'N' for NO: ");
+	scanf("%s",&p);
+    if(p=='Y' or p=='y')
+	{
+    	printf("\n\t\t\t Enter the price of One gift :");
      	scanf("%f",&price);
-		printf("\n\n\t\t\t\t || In order bill of every Students are  ||");
-		printf("\n\n\t\t\t\t Name \t\t Quantity \t  Price \n ");
-     	for(i=0;i<a;i++){
-			 printf("\n\n\t\t\t\t %s \t\t %d \t\t %.2f ",s[i].name,s[i].quantity,s[i].quantity*price);	 
+		printf("\n\t\t\t Total bill in sorted form: ");
+		printf("\n\n\t\t\t\t Name \t\t Quantity \t Price \n ");
+     	for(i=0;i<x;i++)
+		 {
+			 printf("\n\n\t\t\t\t %s \t\t %d \t\t %.2f ",s[i].name,s[i].number,s[i].number*price);	 
      	 }
-	 	printf("\n\n\n\n\n\n\n\n\n	\t\t\t Thank you... \n\n\t\t\t Enjoy your Day !!");
+	 	printf("\n\n\t\t\t Thank you:) \n\n\t\t\t Have a Great Day !!");
 	 	
 	 }
-	 else{
-	 	printf("\n\n Thank you..see you next time \n\n\t\t   !!");
+	 else
+	 {
+	 	printf("\n\t\t\t Thank you:)");
 	 }
 }
-

@@ -65,3 +65,12 @@ void program()
 			}
 		}
 	}
+printf("\n Sorted data by the quantity: \n\n");
+	printf("\t\t\t\tName \t\t Quantity\n");
+	for(i=0;i<n;i++)
+	{
+		printf("\n\n\t\t\t\t%s \t\t %d",u[i].name,u[i].number);
+	}
+	printf("\n");
+	printBill(u,n); 
+}
